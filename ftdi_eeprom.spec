@@ -1,13 +1,13 @@
 Summary:	EEPROM creation and upload utility for the FTDI chips
 Summary(pl.UTF-8):	Narzędzie do tworzenia i nagrywania EEPROM-ów w układach FTDI
 Name:		ftdi_eeprom
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source0:	http://www.intra2net.com/de/produkte/opensource/ftdi/TGZ/%{name}-%{version}.tar.gz
-# Source0-md5:	d133e77f625c496ae9d58629d7443596
-URL:		http://www.intra2net.com/de/produkte/opensource/ftdi/
+Source0:	http://www.intra2net.com/en/developer/libftdi/download/%{name}-%{version}.tar.gz
+# Source0-md5:	331652a593f0b0afd5f2874b37b7973a
+URL:		http://www.intra2net.com/en/developer/libftdi/
 BuildRequires:	libconfuse-devel
 BuildRequires:	libftdi-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ftdi_eeprom/example.conf
+%doc AUTHORS ChangeLog README src/example.conf
 %attr(755,root,root) %{_bindir}/ftdi_eeprom
