@@ -10,6 +10,7 @@ Source0:	http://www.intra2net.com/en/developer/libftdi/download/%{name}-%{versio
 URL:		http://www.intra2net.com/en/developer/libftdi/
 BuildRequires:	libconfuse-devel
 BuildRequires:	libftdi-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
